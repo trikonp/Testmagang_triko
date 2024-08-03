@@ -32,7 +32,7 @@
                             <tbody>
                                 @foreach ($departement as $d)
                                 <tr>
-                                    <td>{{$d->id}}</td>
+                                    <td>{{$loop->iteration}}</td>
                                     <td>{{$d->name}}</td>
                                     <td>
                                         <a href="/departement/edit/{{$d->id}}" class="btn btn-warning">Edit</a>

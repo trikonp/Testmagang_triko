@@ -39,7 +39,7 @@
                             <tbody>
                                 @foreach ($employ as $e)
                                 <tr>
-                                    <td>{{$e->id}}</td>
+                                    <td>{{$loop->iteration}}</td>
                                     <td>{{$e->name}}</td>
                                     <td>{{$e->address}}</td>
                                     <td>{{$e->departement->name}}</td>
